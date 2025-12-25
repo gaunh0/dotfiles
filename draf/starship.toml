@@ -1,0 +1,39 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = false
+
+# KEEP layout – info line + prompt line
+format = """
+[󰮯](bold #cba6f7) [](bold #cba6f7) [](bold #cba6f7) $directory$git_branch$git_status$nodejs$python$rust
+[❯](bold #a6e3a1)[❯](bold #89b4fa)[❯](bold #fab387)
+"""
+
+right_format = ""
+
+[package]
+disabled = true
+
+[directory]
+format = "[$path](#f5c2e7) "
+
+# ---- Git ----
+[git_branch]
+format = "[](bold #cba6f7) [$branch](bold #f5c2e7) "
+
+[git_status]
+format = "([$all_status$ahead_behind](bold #fab387) )"
+ahead = "⇡${count} "
+behind = "⇣${count} "
+staged = "+${count} "
+modified = "!${count} "
+untracked = "?${count} "
+
+# ---- Runtime ----
+[nodejs]
+format = "[ $version](bold #89b4fa) "
+
+[python]
+format = "[ $version](bold #a6e3a1) "
+
+[rust]
+format = "[ $version](bold #fab387) "

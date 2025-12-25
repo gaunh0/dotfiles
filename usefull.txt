@@ -1,0 +1,3 @@
+https://github.com/cebem1nt/dotfiles
+https://github.com/AdnanHodzic/auto-cpufreq
+https://images.pexels.com/photos/1846422/pexels-photo-1846422.jpeg
